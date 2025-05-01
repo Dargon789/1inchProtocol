@@ -1,48 +1,52 @@
 {
-    "name": "OneSplit",
-    "version": "0.0.1",
-    "description": "",
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:CryptoManiacsZone/1split.git"
-    },
-    "license": "MIT",
-    "dependencies": {
-        "@openzeppelin/contracts": "^5.2.0"
-    },
-    "devDependencies": {
-        "chai": "^4.2.0",
-        "coveralls": "^3.1.0",
-        "eslint": "^7.3.1",
-        "eslint-config-standard": "^14.1.1",
-        "eslint-plugin-import": "^2.22.0",
-        "eslint-plugin-node": "^11.1.0",
-        "eslint-plugin-promise": "^4.0.1",
-        "eslint-plugin-standard": "^4.0.0",
-        "eth-gas-reporter": "^0.2.17",
-        "ganache-cli": "^6.9.1",
-        "@openzeppelin/test-helpers": "^0.5.6",
-        "solc": "^0.5.17",
-        "solidity-coverage": "^0.7.9",
-        "ethlint": "^1.2.5",
-        "truffle": "^5.1.32",
-        "truffle-flattener": "^1.4.4"
-    },
-    "scripts": {
-        "test": "scripts/test.sh",
-        "coverage": "scripts/coverage.sh && cat coverage/lcov.info | coveralls",
-        "lint:js": "eslint .",
-        "lint:js:fix": "eslint . --fix",
-        "lint:sol": "solium -d .",
-        "lint:sol:fix": "solium -d . --fix",
-        "lint": "npm run lint:js && npm run lint:sol",
-        "lint:fix": "npm run lint:js:fix && npm run lint:sol:fix",
-        "dist": "truffle-flattener ./contracts/OneSplit.sol > OneSplit.full.sol && solcjs --bin --abi --optimize OneSplit.full.sol && mv OneSplit_full_sol_OneSplit.bin OneSplit.full.bin && mv OneSplit_full_sol_OneSplit.abi OneSplit.full.abi && rm *_sol_*",
-        "dist:view": "truffle-flattener ./contracts/OneSplit.sol > OneSplitView.full.sol && solcjs --bin --abi OneSplitView.full.sol && mv OneSplitView_full_sol_OneSplitView.bin OneSplitView.full.bin && mv OneSplitView_full_sol_OneSplitView.abi OneSplitView.full.abi && rm *_sol_*",
-        "dist:audit": "truffle-flattener ./contracts/OneSplitAudit.sol > OneSplitAudit.full.sol && solcjs --bin --abi --optimize OneSplitAudit.full.sol && mv OneSplitAudit_full_sol_OneSplitAudit.bin OneSplitAudit.full.bin && mv OneSplitAudit_full_sol_OneSplitAudit.abi OneSplitAudit.full.abi && rm *_sol_*",
-        "dist:bnt": "truffle-flattener ./contracts/BancorFinder.sol > BancorFinder.full.sol && solcjs --bin --abi --optimize BancorFinder.full.sol && mv BancorFinder_full_sol_BancorFinder.bin BancorFinder.full.bin && mv BancorFinder_full_sol_BancorFinder.abi BancorFinder.full.abi && rm *_sol_*",
-        "dist:comp": "truffle-flattener ./contracts/CompoundRegistry.sol > CompoundRegistry.full.sol && solcjs --bin --abi --optimize CompoundRegistry.full.sol && mv CompoundRegistry_full_sol_CompoundRegistry.bin CompoundRegistry.full.bin && mv CompoundRegistry_full_sol_CompoundRegistry.abi CompoundRegistry.full.abi && rm *_sol_*",
-        "dist:bal": "truffle-flattener ./contracts/BalancerHelper.sol > BalancerHelper.full.sol && solcjs --bin --abi --optimize BalancerHelper.full.sol && mv BalancerHelper_full_sol_BalancerHelper.bin BalancerHelper.full.bin && mv BalancerHelper_full_sol_BalancerHelper.abi BalancerHelper.full.abi && rm *_sol_*",
-        "dist:aave": "truffle-flattener ./contracts/AaveRegistry.sol > AaveRegistry.full.sol && solcjs --bin --abi --optimize AaveRegistry.full.sol && mv AaveRegistry_full_sol_AaveRegistry.bin AaveRegistry.full.bin && mv AaveRegistry_full_sol_AaveRegistry.abi AaveRegistry.full.abi && rm *_sol_*"
-    }
+  "name": "OneSplit",
+  "version": "0.0.1",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:CryptoManiacsZone/1split.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.2.0",
+    "@snyk/protect": "latest"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "coveralls": "^3.1.0",
+    "eslint": "^9.15.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eth-gas-reporter": "^0.2.26",
+    "ganache-cli": "^6.12.2",
+    "@openzeppelin/test-helpers": "^0.5.16",
+    "solc": "^0.8.12",
+    "solidity-coverage": "^0.8.12",
+    "ethlint": "^1.2.5",
+    "truffle": "^5.6.7",
+    "truffle-flattener": "^1.4.4"
+  },
+  "scripts": {
+    "test": "scripts/test.sh",
+    "coverage": "scripts/coverage.sh && cat coverage/lcov.info | coveralls",
+    "lint:js": "eslint .",
+    "lint:js:fix": "eslint . --fix",
+    "lint:sol": "solium -d .",
+    "lint:sol:fix": "solium -d . --fix",
+    "lint": "npm run lint:js && npm run lint:sol",
+    "lint:fix": "npm run lint:js:fix && npm run lint:sol:fix",
+    "dist": "truffle-flattener ./contracts/OneSplit.sol > OneSplit.full.sol && solcjs --bin --abi --optimize OneSplit.full.sol && mv OneSplit_full_sol_OneSplit.bin OneSplit.full.bin && mv OneSplit_full_sol_OneSplit.abi OneSplit.full.abi && rm *_sol_*",
+    "dist:view": "truffle-flattener ./contracts/OneSplit.sol > OneSplitView.full.sol && solcjs --bin --abi OneSplitView.full.sol && mv OneSplitView_full_sol_OneSplitView.bin OneSplitView.full.bin && mv OneSplitView_full_sol_OneSplitView.abi OneSplitView.full.abi && rm *_sol_*",
+    "dist:audit": "truffle-flattener ./contracts/OneSplitAudit.sol > OneSplitAudit.full.sol && solcjs --bin --abi --optimize OneSplitAudit.full.sol && mv OneSplitAudit_full_sol_OneSplitAudit.bin OneSplitAudit.full.bin && mv OneSplitAudit_full_sol_OneSplitAudit.abi OneSplitAudit.full.abi && rm *_sol_*",
+    "dist:bnt": "truffle-flattener ./contracts/BancorFinder.sol > BancorFinder.full.sol && solcjs --bin --abi --optimize BancorFinder.full.sol && mv BancorFinder_full_sol_BancorFinder.bin BancorFinder.full.bin && mv BancorFinder_full_sol_BancorFinder.abi BancorFinder.full.abi && rm *_sol_*",
+    "dist:comp": "truffle-flattener ./contracts/CompoundRegistry.sol > CompoundRegistry.full.sol && solcjs --bin --abi --optimize CompoundRegistry.full.sol && mv CompoundRegistry_full_sol_CompoundRegistry.bin CompoundRegistry.full.bin && mv CompoundRegistry_full_sol_CompoundRegistry.abi CompoundRegistry.full.abi && rm *_sol_*",
+    "dist:bal": "truffle-flattener ./contracts/BalancerHelper.sol > BalancerHelper.full.sol && solcjs --bin --abi --optimize BalancerHelper.full.sol && mv BalancerHelper_full_sol_BalancerHelper.bin BalancerHelper.full.bin && mv BalancerHelper_full_sol_BalancerHelper.abi BalancerHelper.full.abi && rm *_sol_*",
+    "dist:aave": "truffle-flattener ./contracts/AaveRegistry.sol > AaveRegistry.full.sol && solcjs --bin --abi --optimize AaveRegistry.full.sol && mv AaveRegistry_full_sol_AaveRegistry.bin AaveRegistry.full.bin && mv AaveRegistry_full_sol_AaveRegistry.abi AaveRegistry.full.abi && rm *_sol_*",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
