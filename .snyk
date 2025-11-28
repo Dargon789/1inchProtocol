@@ -12,3 +12,7 @@ patch:
         patched: '2025-05-01T15:35:55.372Z'
         id: SNYK-JS-LODASH-567746
         path: ethlint > lodash
+    - truffle > ganache > async-eventemitter > async > lodash:
+        patched: '2025-11-28T19:58:41.676Z'
+        id: SNYK-JS-LODASH-567746
+        path: truffle > ganache > async-eventemitter > async > lodash
