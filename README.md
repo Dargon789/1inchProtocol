@@ -9,7 +9,7 @@ First ever fully on-chain DEX aggregator protocol by 1inch
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/Dargon789/1inchProtocol/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Dargon789/1inchProtocol/tree/master)
 [![Built-with openzeppelin](https://img.shields.io/badge/built%20with-OpenZeppelin-3677FF)](https://docs.openzeppelin.com/)
 [![Build Status](https://github.com/1inch/solidity-utils/workflows/CI/badge.svg)](https://github.com/1inch/solidity-utils/actions)
-[![Coverage Status](https://codecov.io/gh/1inch/solidity-utils/branch/master/graph/badge.svg?token=HJWBIVXQQA)](https://codecov.io/gh/1inch/solidity-utils)
+[![Coverage Status](https://codecov.io/gh/1inch/solidity-utils/branch/master/graph/badge.svg)](https://codecov.io/gh/1inch/solidity-utils)
 
 # Integration
 
