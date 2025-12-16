@@ -9,7 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "@openzeppelin/contracts": "^5.4.0",
-    "@snyk/protect": "latest"
+    "@snyk/protect": "1.1301.0"
   },
   "devDependencies": {
     "chai": "^4.3.10",
