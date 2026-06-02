@@ -1,12 +1,11 @@
 # [DEPRECATED]
 
-1inchProtocol was deprecated. We recommend to use [API](https://docs.1inch.exchange/api/) instead of 1inchProtocol.
+1inchProtocol was deprecated. We recommend to use [API](https://business.1inch.com/portal/documentation/overview) instead of 1inchProtocol.
 
 # 1inch on-chain DeFi aggregation protocol
 
 First ever fully on-chain DEX aggregator protocol by 1inch
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Dargon789/1inchProtocol/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Dargon789/1inchProtocol/tree/master)
 [![Built-with openzeppelin](https://img.shields.io/badge/built%20with-OpenZeppelin-3677FF)](https://docs.openzeppelin.com/)
 [![Build Status](https://github.com/1inch/solidity-utils/workflows/CI/badge.svg)](https://github.com/1inch/solidity-utils/actions)
 [![Coverage Status](https://codecov.io/gh/1inch/solidity-utils/branch/master/graph/badge.svg)](https://codecov.io/gh/1inch/solidity-utils)
