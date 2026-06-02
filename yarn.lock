@@ -786,10 +786,10 @@
     find-up "^4.1.0"
     fs-extra "^8.1.0"
 
-"@openzeppelin/contracts@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-5.4.0.tgz#177594bdb2d86c71f5d1052fe40cb4edb95fb20f"
-  integrity sha512-eCYgWnLg6WO+X52I16TZt8uEjbtdkgLC0SUX/xnAksjjrQI4Xfn4iBRoI5j55dmlOhDv1Y7BoR3cU7e3WWhC6A==
+"@openzeppelin/contracts@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-5.5.0.tgz#24e8a2f9598de484dcb223512af656edf52bc0e8"
+  integrity sha512-R8hq4zmKKWP2c7OxeRgAcjZwvF5W0Qq2OIX7degrtdM52Q9xYr4MLJdUAVPKGUewNJ1qo+M6YiZLLnNUnjP/gg==
 
 "@openzeppelin/test-helpers@^0.5.16":
   version "0.5.16"

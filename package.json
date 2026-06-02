@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@openzeppelin/contracts": "^5.4.0",
+    "@openzeppelin/contracts": "^2.5.1",
     "@snyk/protect": "latest"
   },
   "devDependencies": {
